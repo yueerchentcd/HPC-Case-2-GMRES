@@ -1,0 +1,12 @@
+ 
+=== small SuiteSparse test ===
+shape = (252, 252), nnz = 952
+basic        | converged                      | iters =  195 | rel_res = 2.355e-09 | rel_err = 7.665e-09
+givens       | converged                      | iters =  195 | rel_res = 2.355e-09 | rel_err = 7.665e-09
+givens_lazy  | converged                      | iters =  195 | rel_res = 2.355e-09 | rel_err = 7.665e-09
+
+=== large SuiteSparse test ===
+shape = (14822, 14822), nnz = 715804
+basic        | stopped without convergence    | iters =  300 | rel_res = 2.946e-03 | rel_err = 9.101e-01
+givens       | stopped without convergence    | iters =  300 | rel_res = 2.946e-03 | rel_err = 9.101e-01
+givens_lazy  | did not converge before stopping | iters =  300 | rel_res = nan | rel_err = nan
